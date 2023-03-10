@@ -4,7 +4,7 @@ function PrintAfterK(arr, k) {
     k = k % n; // 
     for (let i = 0; i < k; i++) {
         const temp = arr[n - 1];
-        for (let j = n - 1; j > 0; j++) {
+        for (let j = n - 1; j > 0; j--) {
             arr[j] = arr[j - 1];
         }
         arr[0] = temp;
