@@ -8,7 +8,7 @@ Let arr = [
  [n, s,  t, a,  r,  s],
  [e, q,  t, o,  r,  p]
 ],
-Let string = “star”*/
+Let string = â€œstarâ€*/
 
 //using DFS to find the combiations of given string
 
@@ -59,15 +59,14 @@ function strCombinations(arr, str) {
 }
 
 
-//inputs
+//inputs  // updated the array properly
 let arr = [
-    [a, c, d, e, f, s]
-    [g, k, r, n, t, t],
-    [n, u, i, a, o, a],
-    [p, l, r, k, t, r],
-    [n, s, t, a, r, s],
-    [e, q, t, o, r, p]
-];
+    ['a', 'c', 'd', 'e', 'f', 's'],
+    ['g', 'k', 'r', 'n', 't', 't'],
+    ['n', 'u', 'i', 'a', 'o', 'a'],
+    ['p', 'l', 'r', 'k', 't', 'r'],
+    ['n', 's', 't', 'a', 'r', 's'],
+    ['e', 'q', 't', 'o', 'r', 'p']];
 
 let str = "star";
 
