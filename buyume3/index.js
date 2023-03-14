@@ -51,7 +51,7 @@ function strCombinations(arr, str) {
     let count = 0;
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr[0].length; j++) {
-            count += dfs(i, j, str, directions);
+            count += dfs(arr, i, j, str, directions);
         }
     }
 
