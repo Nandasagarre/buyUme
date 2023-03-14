@@ -70,4 +70,4 @@ let arr = [
 
 let str = "star";
 
-console.log(strCombinations(arr, str));
+console.log(strCombinations(arr, str)); //128;
