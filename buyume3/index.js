@@ -17,7 +17,7 @@ function dfs(arr, i, j, word, directions) {
 
     if (word.length === 0) return 1;
 
-    if (i < 0 || j < 0 || i >= arr.length || j >= arr[0].length) {
+    if (i < 0 || i >= arr.length || j < 0 || j >= arr[0].length) {
         // if hits boundary
         return 0;
     }
@@ -32,7 +32,7 @@ function dfs(arr, i, j, word, directions) {
 
     let count = 0;
     for (const [x, y] of directions) {
-        count += dfs(i + x, j + y, word.slice(1), directions);
+        count += dfs(arr, i + x, j + y, word.slice(1), directions);
     }
 
     //changing back to unvisted for next iteration
